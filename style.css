@@ -1,0 +1,415 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #faf8f5;
+    color: #51483f;
+    font-family: 'Noto Serif Armenian', serif;
+    overflow-x: hidden;
+}
+
+h1, h2, h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 500;
+}
+
+.section {
+    padding: 100px 8%;
+    text-align: center;
+}
+
+.small-text {
+    font-family: 'Poppins', sans-serif;
+    font-size: 11px;
+    letter-spacing: 4px;
+    color: #a58a6a;
+    margin-bottom: 20px;
+}
+
+.line {
+    width: 65px;
+    height: 1px;
+    background: #a58a6a;
+    margin: 25px auto;
+}
+
+/* MUSIC BUTTON */
+
+.music-button {
+    position: fixed;
+    top: 25px;
+    right: 25px;
+    z-index: 1000;
+    background: rgba(250, 248, 245, 0.9);
+    color: #51483f;
+    border: 1px solid #a58a6a;
+    padding: 12px 18px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    transition: 0.3s;
+}
+
+.music-button:hover {
+    background: #a58a6a;
+    color: white;
+}
+
+/* NAVBAR */
+
+.navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 25px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+}
+
+.logo {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 32px;
+    color: white;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    font-size: 13px;
+    transition: 0.3s;
+}
+
+.navbar a:hover {
+    color: #d9c2a4;
+}
+
+/* HERO */
+
+.hero {
+    min-height: 100vh;
+    background:
+        url("assets/couple.jpg")
+        center/cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    text-align: center;
+}
+
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.38);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    color: white;
+    padding: 30px;
+}
+
+.hero h1 {
+    font-size: clamp(65px, 10vw, 120px);
+    margin: 20px 0;
+}
+
+.hero h1 span {
+    color: #d8bd9d;
+}
+
+.hero h2 {
+    font-size: 35px;
+    margin: 25px 0;
+}
+
+.invitation-text {
+    font-size: 16px;
+    line-height: 2;
+}
+
+.main-button {
+    display: inline-block;
+    padding: 14px 32px;
+    margin-top: 20px;
+    background: #a58a6a;
+    color: white;
+    border: 1px solid #a58a6a;
+    text-decoration: none;
+    cursor: pointer;
+    font-family: 'Noto Serif Armenian', serif;
+    transition: 0.3s;
+}
+
+.main-button:hover {
+    background: transparent;
+    color: #a58a6a;
+}
+
+/* STORY */
+
+.story {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 70px;
+    text-align: left;
+}
+
+.story-image img {
+    width: 100%;
+    height: 550px;
+    object-fit: cover;
+}
+
+.story-content h2,
+.details h2,
+.location h2,
+.rsvp h2,
+.countdown-section h2 {
+    font-size: 45px;
+}
+
+.story-content p:not(.small-text) {
+    line-height: 2;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+/* DETAILS */
+
+.details {
+    background: #eee5d9;
+}
+
+.details-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-top: 55px;
+}
+
+.detail-card {
+    background: #faf8f5;
+    padding: 45px 20px;
+}
+
+.detail-icon {
+    font-size: 35px;
+    color: #a58a6a;
+    margin-bottom: 20px;
+}
+
+.detail-card h3 {
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+.detail-card p {
+    font-size: 14px;
+    line-height: 2;
+}
+
+/* COUNTDOWN */
+
+.countdown-section {
+    padding: 100px 20px;
+    text-align: center;
+    background: #faf8f5;
+}
+
+.countdown {
+    display: flex;
+    justify-content: center;
+    gap: 55px;
+    margin-top: 45px;
+    flex-wrap: wrap;
+}
+
+.countdown span {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 55px;
+    color: #a58a6a;
+}
+
+.countdown p {
+    font-size: 13px;
+}
+
+/* LOCATION */
+
+.location h3 {
+    font-size: 28px;
+    margin-top: 20px;
+}
+
+.location p {
+    margin-top: 10px;
+}
+
+.map-container {
+    max-width: 900px;
+    margin: 35px auto;
+    overflow: hidden;
+}
+
+.map-container iframe {
+    display: block;
+}
+
+/* RSVP */
+
+.rsvp {
+    background: #eee5d9;
+}
+
+#rsvpForm {
+    max-width: 550px;
+    margin: 40px auto 0;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+#rsvpForm input,
+#rsvpForm select,
+#rsvpForm textarea {
+    width: 100%;
+    padding: 16px;
+    border: 1px solid #d5c6b4;
+    background: #faf8f5;
+    color: #51483f;
+    font-family: 'Noto Serif Armenian', serif;
+    font-size: 14px;
+    outline: none;
+}
+
+#rsvpForm input:focus,
+#rsvpForm select:focus,
+#rsvpForm textarea:focus {
+    border-color: #a58a6a;
+}
+
+#rsvpForm button {
+    align-self: center;
+}
+
+#formMessage {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+/* FOOTER */
+
+footer {
+    background: #51483f;
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+footer h2 {
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+footer p {
+    font-size: 13px;
+    line-height: 2;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
+
+    .navbar {
+        padding: 20px;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .navbar ul {
+        gap: 12px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .navbar a {
+        font-size: 11px;
+    }
+
+    .music-button {
+        top: 15px;
+        right: 15px;
+        padding: 9px 12px;
+        font-size: 11px;
+    }
+
+    .hero h1 {
+        font-size: 65px;
+    }
+
+    .story {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+    .story-image img {
+        height: 400px;
+    }
+
+    .details-container {
+        grid-template-columns: 1fr;
+    }
+
+    .countdown {
+        gap: 25px;
+    }
+
+    .countdown span {
+        font-size: 40px;
+    }
+
+    .section {
+        padding: 75px 6%;
+    }
+
+    .story-content h2,
+    .details h2,
+    .location h2,
+    .rsvp h2,
+    .countdown-section h2 {
+        font-size: 35px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        transition-duration: 0.01ms !important;
+    }
+}

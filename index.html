@@ -1,0 +1,253 @@
+
+<!DOCTYPE html>
+<html lang="hy">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Karen & Ani | Wedding Invitation</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Poppins:wght@300;400;500&family=Noto+Serif+Armenian:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Background Music -->
+    <audio id="weddingMusic" loop preload="auto">
+        <source src="assets/wedding-music.mp3" type="audio/mpeg">
+        Your browser does not support audio.
+    </audio>
+
+    <!-- Music Button -->
+    <button id="musicButton" class="music-button" aria-label="Play music">
+        ♫ <span>Երաժշտություն</span>
+    </button>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">K & A</div>
+
+        <ul>
+            <li><a href="#home">Գլխավոր</a></li>
+            <li><a href="#story">Մեր պատմությունը</a></li>
+            <li><a href="#details">Մանրամասներ</a></li>
+            <li><a href="#location">Վայրը</a></li>
+            <li><a href="#rsvp">RSVP</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero -->
+    <header class="hero" id="home">
+        <div class="hero-overlay"></div>
+
+        <div class="hero-content">
+            <p class="small-text">ՍԻՐՈՎ ՀՐԱՎԻՐՈՒՄ ԵՆՔ ՁԵԶ</p>
+
+            <h1>Karen <span>&</span> Ani</h1>
+
+            <div class="line"></div>
+
+            <p class="invitation-text">
+                Ուրախ կլինենք կիսել մեր կյանքի ամենակարևոր օրը Ձեզ հետ։
+            </p>
+
+            <h2>24.11.2027</h2>
+
+            <a href="#details" class="main-button">
+                Մանրամասներ
+            </a>
+        </div>
+    </header>
+
+    <!-- Our Story -->
+    <section class="story section" id="story">
+
+        <div class="story-image">
+            <img src="photo.jpg" alt="Karen and Ani">
+        </div>
+
+        <div class="story-content">
+            <p class="small-text">ՄԵՐ ՍԻՐՈ ՊԱՏՄՈՒԹՅՈՒՆԸ</p>
+
+            <h2>Մեր պատմությունը</h2>
+
+            <div class="line"></div>
+
+            <p>
+                Յուրաքանչյուր գեղեցիկ պատմություն սկսվում է
+                մի հանդիպումից։ Մեր պատմությունը նույնպես
+                սկսվեց մի փոքրիկ պահից, որը դարձավ մեր
+                կյանքի ամենագեղեցիկ ճանապարհորդությունը։
+            </p>
+
+            <p>
+                Այժմ մենք ցանկանում ենք այդ գեղեցիկ օրը
+                կիսել մեր սիրելի մարդկանց հետ։
+            </p>
+        </div>
+
+    </section>
+
+    <!-- Details -->
+    <section class="details section" id="details">
+
+        <p class="small-text">ՊԱՀՊԱՆԵՔ ԱՅՍ ՕՐԸ</p>
+
+        <h2>Հարսանիքի մանրամասները</h2>
+
+        <div class="line"></div>
+
+        <div class="details-container">
+
+            <div class="detail-card">
+                <div class="detail-icon">♡</div>
+                <h3>Ամսաթիվ</h3>
+                <p>24 Նոյեմբերի, 2027</p>
+            </div>
+
+            <div class="detail-card">
+                <div class="detail-icon">◷</div>
+                <h3>Ժամը</h3>
+                <p>17:00</p>
+            </div>
+
+            <div class="detail-card">
+                <div class="detail-icon">⌖</div>
+                <h3>Վայրը</h3>
+                <p>Sirelis Hall</p>
+                <p>Ախալքալաք</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Countdown -->
+    <section class="countdown-section">
+
+        <p class="small-text">ՄԻՆՉԵՎ ՄԵՐ ՀԱՏՈՒԿ ՕՐԸ</p>
+
+        <h2>Սպասում ենք Ձեզ</h2>
+
+        <div class="countdown">
+
+            <div>
+                <span id="days">00</span>
+                <p>Օր</p>
+            </div>
+
+            <div>
+                <span id="hours">00</span>
+                <p>Ժամ</p>
+            </div>
+
+            <div>
+                <span id="minutes">00</span>
+                <p>Րոպե</p>
+            </div>
+
+            <div>
+                <span id="seconds">00</span>
+                <p>Վայրկյան</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Location -->
+    <section class="location section" id="location">
+
+        <p class="small-text">ՍՊԱՍՈՒՄ ԵՆՔ ՁԵԶ</p>
+
+        <h2>Մեր հանդիպման վայրը</h2>
+
+        <div class="line"></div>
+
+        <h3>Sirelis Hall</h3>
+        <p>Ախալքալաք, Վրաստան</p>
+
+       
+
+        <a
+            href="https://yandex.ru/maps/-/CXrunY8M"
+            target="_blank"
+            class="main-button">
+            Բացել քարտեզը
+        </a>
+
+    </section>
+
+    <!-- RSVP -->
+    <section class="rsvp section" id="rsvp">
+
+        <p class="small-text">ԽՆԴՐՈՒՄ ԵՆՔ ՀԱՍՏԱՏԵԼ ՄԱՍՆԱԿՑՈՒԹՅՈՒՆԸ</p>
+
+        <h2>Կմասնակցե՞ք մեր հարսանիքին</h2>
+
+        <div class="line"></div>
+
+        <form id="rsvpForm">
+
+            <input
+                type="text"
+                id="firstName"
+                placeholder="Անուն"
+                required>
+
+            <input
+                type="text"
+                id="lastName"
+                placeholder="Ազգանուն"
+                required>
+
+            <select id="attendance" required>
+                <option value="">Կմասնակցե՞ք</option>
+                <option value="Այո">Այո, սիրով</option>
+                <option value="Ոչ">Ցավոք, ոչ</option>
+            </select>
+
+            <div id="guestCountContainer">
+                <input
+                    type="number"
+                    id="guestCount"
+                    min="1"
+                    max="10"
+                    value="1"
+                    placeholder="Հյուրերի քանակ">
+            </div>
+
+            <textarea
+                id="guestMessage"
+                placeholder="Ձեր հաղորդագրությունը..."
+                rows="4">
+            </textarea>
+
+            <button type="submit" class="main-button">
+                Ուղարկել
+            </button>
+
+            <p id="formMessage"></p>
+
+        </form>
+
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <h2>Karen & Ani</h2>
+
+        <p>24 November 2027</p>
+
+        <p>Սիրով սպասում ենք Ձեզ ♡</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
